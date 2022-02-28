@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game doan so</title>
+</head>
+<body>
+<button onclick="doanso();">Bat dau choi</button>
+<script>
+    function doanso() {
+        let a = parseInt(prompt("Nhap a"));
+        let b = parseInt(prompt("Nhap b"));
+        while (a>b) {
+            let b = parseInt(prompt("Nhap lai b "));
+        }
+        for (let i = 1; i<=3;) {
+            let c = parseInt(prompt("Nhap so du doan lan " + i));
+            let k = parseInt(a+(b-a)*Math.random());
+            if (c != k) {
+                alert("Ban da du doan sai");
+                i++;
+            } else if (c == k) {
+                alert("Chuc mung ban da du doan dung")
+                i +=3;
+            }
+        }
+    }
+</script>
+</body>
+</html>
