@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--2 3 5 7 11 13 17 19-->
+<script>
+    let numbers = parseInt(prompt("Nhap so luong so nguyen to: "));
+    let N = 2;
+    for (count = 0; count < numbers;) {
+        count2 = 0;
+        for (i = 2; i <= Math.sqrt(N); i++) {
+            if (N % i == 0) {
+                count2++;
+            }
+        }
+        if (count2 == 0 & N > 1) {
+            document.write(N + " ");
+            count++;
+        }
+        N++;
+    }
+
+
+</script>
+</body>
+</html>
