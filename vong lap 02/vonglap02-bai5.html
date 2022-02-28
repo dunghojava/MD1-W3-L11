@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh lai</title>
+</head>
+<body>
+<input id="st1" type="number">Nhap so tien<hr>
+<input id="st2" type="number">Nhap thang vay<hr>
+<input id="st3" type="number">Nhap lai suat<hr>
+<button onclick="tinhlai();">Tinh lai</button>
+<script>
+    function tinhlai() {
+        let tien = +document.getElementById("st1").value;
+        let thang = +document.getElementById("st2").value;
+        let lai = +document.getElementById("st3").value;
+        for (let i = 0; i < thang; i++) {
+            tien = tien + tien * lai / 100;
+            console.log(tien)
+        }
+        alert(tien);
+    }
+</script>
+</body>
+</html>
