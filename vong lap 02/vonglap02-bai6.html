@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trai tym</title>
+</head>
+<body>
+<script>
+    let N = prompt("Nhap chieu dai trai tym (do dai le)");
+    // let cao = prompt("Nhap chieu cao trai tym (do cao chan)");
+    document.write("_");
+    for (let i = 0; i < 2; i++) {
+        for (let i = 0; i < (N - 3) / 2; i++) {
+            document.write("*");
+        }
+        document.write("_");
+    }
+    document.write("<br>");
+    for (let i = 1; i <= N/2; i++) {
+        for (let j = 1; j <= i; j++) {
+            document.write("_");
+            //__________________
+            for (let i = N/2; i >= 0; i--) {
+                for (let j = 1; j <= N/2; j++) {
+                    if (j <= (N/2 - i)) {
+                        document.write("_");
+                    } else {
+                        document.write("*");
+                    }
+                } document.write("<br>")
+            }
+            //__________________
+        }
+        document.write("<br>");
+    }
+
+
+
+</script>
+</body>
+</html>
+
+<!--for (let i = 0; i <= (dai-1)/2; i++) {-->
+<!--for (let j = 0; j <= i; j++) {-->
+<!--document.write("_");-->
+<!--}-->
+<!--document.write("<br>");-->
+<!--}-->
+<!--for (let i = (dai-1)/2; i >= 1; i&#45;&#45;) {-->
+<!--for (let j = 1; j <= i; j++) {-->
+<!--document.write("*");-->
+<!--}-->
+<!--document.write("<br>");-->
+<!--}-->

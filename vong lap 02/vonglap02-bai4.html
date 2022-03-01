@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In hinh chu nhat</title>
+</head>
+<body>
+<script>
+    let dai = prompt("Nhap chieu dai hinh chu nhat");
+    let rong = prompt("Nhap chieu rong hinh chu nhat");
+    for (let i = 1; i <= dai; i++) {
+        document.write("*");
+    }
+    for (let k = 1; k <= (rong-2); k++) {
+        document.write("<br>"+"*");
+        for (let j = 1; j < (dai-2); j++) {
+            document.write("_");
+        }
+        document.write("*");
+    }
+    document.write("<br>");
+    for (let i = 1; i <= dai; i++) {
+        document.write("*");
+    }
+</script>
+</body>
+</html>
